@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    
+  }
+  
+  .row::after{
+    content:"";
+    clear:both;
+    display:block;
+  }
+  
+  [class*="col-"]{
+    float:left;
+    padding: 15px;
+  }
+  
+  .header{
+    background-color: yellow;
+    color:black;
+    padding:15px;
+    text-align:center;
+  }
+  
+  .menu ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+  
+  .menu li{
+    padding:10px;
+    margin-bottom: 7px;
+    background-color:black;
+    color:yellow;
+    font-weight: bold;
+  }
+  
+  .menu li:hover{
+    background-color: lightgreen;
+    color:black;
+  }
+
+  .menu_content {
+      display: none;
+      padding:12px 15px;
+      position:absolute;
+      text-decoration: none;
+      background-color:aqua;
+
+  }
+  
+  .right_box{
+    background-color: black;
+    padding:30px;
+    color:red;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+  }
+
+  .right_box :hover{
+      background-color:orange;
+      color:black;
+  }
+.col-6 {
+
+    color:rgb(110, 38, 38);
+}
+
+  .footer{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    padding:100px;
+    font-weight: bold;
+  }
+  
+  .col-1{
+    width:10%;
+  }
+  
+  .col-2{
+    width:20%;
+  }
+  
+  .col-3{
+    width:25%;
+  }
+  
+  .col-4{
+    width:40%;
+  }
+  
+  .col-5{
+    width:41.66%;
+  }
+  
+  .col-6{
+    width:50%;
+  }
+  
+  .col-7{
+    width:60%;
+  }
+  
+  .col-8{
+    width:60%;
+  }
+  
+  .col-9{
+    width:60%;
+  }
+  
+  .col-10{
+    width:80%;
+  }
+  
+  .col-11{
+    width:90%;
+  }
+  
+  .col-12{
+    width:100%;
+  }
+  
+  @media only screen and (max-width: 768px){
+    [class*="col-"]{
+      width: 100%;
+      /* implement anything of css when the screen size is max of 768px */
+    }
+  }
